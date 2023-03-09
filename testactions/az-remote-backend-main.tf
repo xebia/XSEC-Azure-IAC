@@ -8,7 +8,7 @@ resource "random_string" "tf-name" {
 }
 
 resource "random_string" "tf-name2" {
-  length = 8
+  length = 5
   upper = false
   numeric = false
   lower = true
