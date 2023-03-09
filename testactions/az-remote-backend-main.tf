@@ -6,6 +6,14 @@ resource "random_string" "tf-name" {
   lower = true
   special = false
 }
+
+resource "random_string" "tf-name2" {
+  length = 8
+  upper = false
+  numeric = false
+  lower = true
+  special = false
+}
 # Create a Resource Group for the Terraform State File
 resource "azurerm_resource_group" "state-rg" {
   name = "${lower(var.company)}-tfstate-rg"
@@ -21,7 +29,7 @@ resource "azurerm_resource_group" "state-rg" {
 # Create a Storage Account for the Terraform State File
 resource "azurerm_storage_account" "state-sta" {
   depends_on = [azurerm_resource_group.state-rg]  
-  name = "${lower(var.company)}tf${random_string.tf-name.result}"
+  name = "${lower(var.company)}tf${random_string.tf-name2.result}"
   resource_group_name = azurerm_resource_group.state-rg.name
   location = azurerm_resource_group.state-rg.location
   account_kind = "StorageV2"
