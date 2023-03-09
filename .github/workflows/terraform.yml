@@ -36,7 +36,7 @@ jobs:
       run: terraform init
 # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan -target=module.testactions -input=false
+      run: terraform -chdir=testactions plan -input=false
 # Apply Terraform changes
     - name: Terraform Apply
       run: terraform apply -auto-approve -input=false
