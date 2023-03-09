@@ -26,7 +26,7 @@ jobs:
           framework: terraform
   terraform:
     name: 'Terraform'
-    needs: tfsec
+    needs: Checkov
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
