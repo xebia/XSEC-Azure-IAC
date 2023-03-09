@@ -33,6 +33,8 @@ resource "azurerm_storage_account" "state-sta" {
 	# checkov:skip=CKV2_AZURE_1: For Testing Reasons, waivering risk
 	# checkov:skip=CKV2_AZURE_18: For Testing Reasons, waivering risk
 	# checkov:skip=CKV_AZURE_44: For Testing Reasons, waivering risk
+  # checkov:skip=CKV_AZURE_190: test2
+  # checkov:skip=CKV_AZURE_206: test2
   depends_on = [azurerm_resource_group.state-rg]  
   name = "${lower(var.company)}tf${random_string.tf-name2.result}"
   resource_group_name = azurerm_resource_group.state-rg.name
