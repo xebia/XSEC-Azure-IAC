@@ -33,7 +33,7 @@ jobs:
           sarif_file: tfsec.sarif
   terraform:
     name: 'Terraform'
-    need: tfsec
+    needs: tfsec
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
