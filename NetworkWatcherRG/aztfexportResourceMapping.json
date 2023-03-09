@@ -1,0 +1,27 @@
+{
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/NetworkWatcherRG": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/NetworkWatcherRG",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "res-0"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_eastus": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_eastus",
+		"resource_type": "azurerm_network_watcher",
+		"resource_name": "res-1"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_westeurope": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_westeurope",
+		"resource_type": "azurerm_network_watcher",
+		"resource_name": "res-2"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_westindia": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_westindia",
+		"resource_type": "azurerm_network_watcher",
+		"resource_name": "res-3"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/NetworkWatcherRG/providers/microsoft.network/networkWatchers/NetworkWatcher_westeurope/flowLogs/xsecBeast-nsg-maikel-playground_asml-flowlog": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_westeurope/flowLogs/xsecBeast-nsg-maikel-playground_asml-flowlog",
+		"resource_type": "azurerm_network_watcher_flow_log",
+		"resource_name": "res-4"
+	}
+}
