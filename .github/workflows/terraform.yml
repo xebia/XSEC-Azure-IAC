@@ -1,4 +1,5 @@
 name: 'Terraform'
+
 on:
   push:
     branches:
@@ -21,7 +22,7 @@ jobs:
     defaults:
       run:
         shell: bash
-steps:
+    steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v3
