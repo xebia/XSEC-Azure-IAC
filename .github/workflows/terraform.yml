@@ -9,7 +9,7 @@ on:
 permissions:
   contents: read
 jobs:
-  build:
+  Checkov:
     name: Checkov
     runs-on: ubuntu-latest
     steps:
