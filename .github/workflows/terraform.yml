@@ -1,3 +1,22 @@
+name: PR approved and labeled
+
+on:
+  pull_request:
+    types: [labeled]
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ (github.event.review.state == 'approved') && (contains(github.event.pull_request.labels.*.name, 'test')) }}
+    steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: echo "$GITHUB_CONTEXT"
+      - run: echo ${{ github.event.review.state }}
+
 name: 'Terraform'
 
 on:
