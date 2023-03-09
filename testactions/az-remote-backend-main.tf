@@ -28,6 +28,7 @@ resource "azurerm_resource_group" "state-rg" {
 }
 # Create a Storage Account for the Terraform State File
 resource "azurerm_storage_account" "state-sta" {
+	# checkov:skip=CKV_AZURE_59: test11
 	# checkov:skip=CKV_AZURE_59: test12
 	# checkov:skip=CKV_AZURE_33: For Testing Reasons, waivering risk
 	# checkov:skip=CKV2_AZURE_1: For Testing Reasons, waivering risk
