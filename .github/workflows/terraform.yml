@@ -10,7 +10,7 @@ permissions:
   contents: read
 jobs:
   build:
-    name: 'Checkov' 
+    name: Checkov
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -26,7 +26,7 @@ jobs:
           framework: terraform
   terraform:
     name: 'Terraform'
-    needs: Checkov
+    needs: tfsec
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
