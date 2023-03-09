@@ -39,4 +39,8 @@ jobs:
       run: terraform -chdir=testactions plan -input=false
 # Apply Terraform changes
     - name: Terraform Apply
-      run: terraform -chdir=testactions plan apply -auto-approve -input=false
+      with:
+          tf_actions_subcommand: "apply"
+          args: '-chdir=testactions -auto-approve -input=false'
+      # run: terraform -chdir=testactions plan apply -auto-approve -input=false
+
