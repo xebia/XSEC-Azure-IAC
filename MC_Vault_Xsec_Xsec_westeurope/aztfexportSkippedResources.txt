@@ -1,6 +1,0 @@
-Following resources are marked to be skipped:
-
-- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/MC_Vault_Xsec_Xsec_westeurope/providers/Microsoft.Compute/virtualMachineScaleSets/aks-default-11516176-vmss/virtualMachines/0
-- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/MC_Vault_Xsec_Xsec_westeurope/providers/Microsoft.Compute/virtualMachineScaleSets/aks-default-11516176-vmss/virtualMachines/0/extensions/AKSLinuxExtension
-- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/MC_Vault_Xsec_Xsec_westeurope/providers/Microsoft.Compute/virtualMachineScaleSets/aks-default-11516176-vmss/virtualMachines/0/extensions/aks-default-11516176-vmss-AKSLinuxBilling
-- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/MC_Vault_Xsec_Xsec_westeurope/providers/Microsoft.Compute/virtualMachineScaleSets/aks-default-11516176-vmss/virtualMachines/0/extensions/vmssCSE
