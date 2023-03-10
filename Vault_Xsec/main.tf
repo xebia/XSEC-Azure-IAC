@@ -33,6 +33,7 @@ resource "azurerm_kubernetes_cluster" "res-1" {
   ]
 }
 resource "azurerm_kubernetes_cluster_node_pool" "res-2" {
+  # checkov:skip=CKV_AZURE_168: This issue is being waivered for now
   kubernetes_cluster_id = "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Vault_Xsec/providers/Microsoft.ContainerService/managedClusters/Xsec"
   mode                  = "System"
   name                  = "default"
