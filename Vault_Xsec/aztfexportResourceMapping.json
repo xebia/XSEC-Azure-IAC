@@ -1,0 +1,17 @@
+{
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Vault_Xsec": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Vault_Xsec",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "res-0"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Vault_Xsec/providers/Microsoft.ContainerService/managedClusters/Xsec": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Vault_Xsec/providers/Microsoft.ContainerService/managedClusters/Xsec",
+		"resource_type": "azurerm_kubernetes_cluster",
+		"resource_name": "res-1"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Vault_Xsec/providers/Microsoft.ContainerService/managedClusters/Xsec/agentPools/default": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Vault_Xsec/providers/Microsoft.ContainerService/managedClusters/Xsec/agentPools/default",
+		"resource_type": "azurerm_kubernetes_cluster_node_pool",
+		"resource_name": "res-2"
+	}
+}
