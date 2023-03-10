@@ -27,7 +27,7 @@ resource "azurerm_network_watcher" "res-3" {
   ]
 }
 resource "azurerm_network_watcher_flow_log" "res-4" {
-	# checkov:skip=CKV_AZURE_12: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_12: This issue is being waivered for now
   enabled                   = true
   name                      = "xsecBeast-nsg-maikel-playground_asml-flowlog"
   network_security_group_id = "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/networkSecurityGroups/xsecBeast-nsg"
@@ -39,11 +39,8 @@ resource "azurerm_network_watcher_flow_log" "res-4" {
     enabled = true
   }
   traffic_analytics {
-    enabled               = false
-    interval_in_minutes   = 0
-    workspace_id          = ""
-    workspace_region      = ""
-    workspace_resource_id = ""
+    enabled             = false
+    interval_in_minutes = 0
   }
   depends_on = [
     azurerm_network_watcher.res-2,
