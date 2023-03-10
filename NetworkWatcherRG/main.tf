@@ -38,10 +38,6 @@ resource "azurerm_network_watcher_flow_log" "res-4" {
     days    = 30
     enabled = true
   }
-  traffic_analytics {
-    enabled             = false
-    interval_in_minutes = 0
-  }
   depends_on = [
     azurerm_network_watcher.res-2,
   ]
