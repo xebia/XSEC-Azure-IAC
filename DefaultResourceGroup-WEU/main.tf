@@ -515,8 +515,8 @@ resource "azurerm_storage_account" "res-462" {
 resource "azurerm_storage_account" "res-467" {
   # checkov:skip=CKV_AZURE_59: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_44: This issue is being waivered for now
-  # checkov:skip=CKV2_AZURE_190: This issue is being waivered for now
-  # checkov:skip=CKV2_AZURE_206: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_190: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_206: This issue is being waivered for now
   # checkov:skip=CKV2_AZURE_18: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_33: This issue is being waivered for now
   # checkov:skip=CKV2_AZURE_1: This issue is being waivered for now
