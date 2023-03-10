@@ -9,8 +9,19 @@ on:
 permissions:
   contents: read
 jobs:
+  tfsec:
+    name: tfsec
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@master
+      - name: tfsec
+        uses: aquasecurity/tfsec-action@v1.0.0
+        with:
+          working_directory: ./
   Checkov:
     name: Checkov
+    needs: tfsec
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -25,7 +36,7 @@ jobs:
           directory: ./
           framework: terraform
   terraform:
-    name: 'Terraform'
+    name: Terraform
     needs: Checkov
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
