@@ -20,6 +20,21 @@ resource "azurerm_linux_virtual_machine_scale_set" "res-1" {
   resource_group_name    = "MC_Vault_Xsec_Xsec_westeurope"
   single_placement_group = false
   sku                    = "Standard_D2_v2"
+  source_image_reference {
+    publisher = "Canonical"
+    offer     = "UbuntuServer"
+    sku       = "18.04-LTS"
+    version   = "latest"
+  }
+  tags = {
+    aks-managed-coordination            = "true"
+    aks-managed-createOperationID       = "6e3f2562-e2fb-4023-81b5-caf243c15bc7"
+    aks-managed-creationSource          = "vmssclient-aks-default-11516176-vmss"
+    aks-managed-kubeletIdentityClientID = "0f961be1-e758-4f1c-ba6b-9838dfcf8c8d"
+    aks-managed-orchestrator            = "Kubernetes:1.24.9"
+    aks-managed-poolName                = "default"
+    aks-managed-resourceNameSuffix      = "41832928"
+  }
   admin_ssh_key {
     public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC9K6n1Dlr1IEJRHR11NwjnA5/zXyFaV7yYfhU0zcLoB+moVQ/5ArcqkGXpalVnruz+t0oO8lR736NOypuIXKBN+Y5pSSdasHlM53wz8oL85l3IBv6wbZw5mWb9mUsNtZ7RjXmQ2/VleuWIO0T1FXFUf8PkbErXltNJuuKOmoLLSGqgp5UbrzWAGwxE5IDxDFKI1UppB8hnCRV5k4lhVR9S4TNXL3PAQBH9KlpNqbq8HdVmtY4+64rvybMeyyUQV2t4y8fxvl8/lU6dWMtFgM0QCKw3XE1hMjJ6FaKs6eEQUQMgOHGkeVmGNYEt+3jcx/SwHXrGN7yZw2O7BzlvJ+jJT1omxCKtrjCVv4GitISx2E5xXwqsgCSoCdGHHdUH5K85mZHv8jIsQPkxKh3/6M0vYl/T1dt/IWqd4UG911EhNDQuUX9VNhaR0LR6wF67b2qjs1BsrTX8Ge4oS7czkk82pJ7tyhsbllAt/fpbpFV8mMXUr0lIybZWbA8gsM+LsKEgPi3Dp6uJvdjICy6jDNKgNjWWxpXvUvpE6Gz6YB0lZ3ds/535jiSDtC9x8m/6RjmwykB6K+dEKu+yMSu6n6nbZ+m3MKL5weCHPvZZ4gBle9CqJJbA/6ziTKmF9atzckTH+SNTNDtVRUJX++NRotAT/tW/KYuu4VjOK0bgmJT1+w==\n"
     username   = "azureuser"
