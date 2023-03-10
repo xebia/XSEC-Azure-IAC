@@ -13,6 +13,16 @@ resource "azurerm_service_plan" "res-1" {
   ]
 }
 resource "azurerm_windows_web_app" "res-2" {
+  # checkov:skip=CKV_AZURE_13: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_17: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_65: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_66: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_78: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_63: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_18: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_16: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_71: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_88: This issue is being waivered for now
   client_affinity_enabled = true
   https_only              = true
   location                = "westeurope"

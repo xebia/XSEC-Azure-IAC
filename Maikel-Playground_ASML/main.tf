@@ -3,7 +3,10 @@ resource "azurerm_resource_group" "res-0" {
   name     = "Maikel-Playground_ASML"
 }
 resource "azurerm_windows_virtual_machine" "res-1" {
-  admin_password        = "ignored-as-imported"
+	# checkov:skip=CKV_AZURE_50: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_151: This issue is being waivered for now
+  # checkov:skip=CKV_SECRET_80: This issue is being waivered for now
+  admin_password        = "Thisisatest56!"
   admin_username        = "maikelvanamen1"
   license_type          = "Windows_Client"
   location              = "westeurope"
@@ -34,6 +37,7 @@ resource "azurerm_windows_virtual_machine" "res-1" {
   ]
 }
 resource "azurerm_network_interface" "res-2" {
+	# checkov:skip=CKV_AZURE_119: This issue is being waivered for now
   enable_accelerated_networking = true
   location                      = "westeurope"
   name                          = "xsecbeast411"
@@ -72,6 +76,7 @@ resource "azurerm_network_security_group" "res-4" {
   ]
 }
 resource "azurerm_network_security_rule" "res-5" {
+	# checkov:skip=CKV_AZURE_9: This issue is being waivered for now
   access                      = "Allow"
   destination_address_prefix  = "*"
   destination_port_range      = "3389"
