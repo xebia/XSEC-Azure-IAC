@@ -86,16 +86,6 @@ resource "azurerm_virtual_machine_scale_set_extension" "res-3" {
     azurerm_linux_virtual_machine_scale_set.res-1,
   ]
 }
-resource "azurerm_virtual_machine_scale_set_extension" "res-4" {
-  name                         = "vmssCSE"
-  publisher                    = "Microsoft.Azure.Extensions"
-  type                         = "CustomScript"
-  type_handler_version         = "2.0"
-  virtual_machine_scale_set_id = "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/MC_Vault_Xsec_Xsec_westeurope/providers/Microsoft.Compute/virtualMachineScaleSets/aks-default-11516176-vmss"
-  depends_on = [
-    azurerm_linux_virtual_machine_scale_set.res-1,
-  ]
-}
 resource "azurerm_user_assigned_identity" "res-9" {
   location            = "westeurope"
   name                = "Xsec-agentpool"
