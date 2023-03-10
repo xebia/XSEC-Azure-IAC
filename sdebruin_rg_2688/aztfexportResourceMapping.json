@@ -1,0 +1,12 @@
+{
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/sdebruin_rg_2688": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/sdebruin_rg_2688",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "res-0"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/sdebruin_rg_2688/providers/Microsoft.Web/serverFarms/sdebruin_asp_3514": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/sdebruin_rg_2688/providers/Microsoft.Web/serverfarms/sdebruin_asp_3514",
+		"resource_type": "azurerm_service_plan",
+		"resource_name": "res-1"
+	}
+}

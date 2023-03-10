@@ -1,0 +1,57 @@
+{
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "res-0"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Compute/virtualMachines/xsecBeast": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Compute/virtualMachines/xsecBeast",
+		"resource_type": "azurerm_windows_virtual_machine",
+		"resource_name": "res-1"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/networkInterfaces/xsecbeast411": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/networkInterfaces/xsecbeast411",
+		"resource_type": "azurerm_network_interface",
+		"resource_name": "res-2"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/networkInterfaces/xsecbeast411/networkSecurityGroups/L3N1YnNjcmlwdGlvbnMvMWEwZDA3OGUtYjBlNi00MzJkLTg5YzctOGE3NWNhYzY2NGFhL3Jlc291cmNlR3JvdXBzL01haWtlbC1QbGF5Z3JvdW5kX0FTTUwvcHJvdmlkZXJzL01pY3Jvc29mdC5OZXR3b3JrL25ldHdvcmtTZWN1cml0eUdyb3Vwcy94c2VjQmVhc3QtbnNn": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/networkInterfaces/xsecbeast411|/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/networkSecurityGroups/xsecBeast-nsg",
+		"resource_type": "azurerm_network_interface_security_group_association",
+		"resource_name": "res-3"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/networkSecurityGroups/xsecBeast-nsg": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/networkSecurityGroups/xsecBeast-nsg",
+		"resource_type": "azurerm_network_security_group",
+		"resource_name": "res-4"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/networkSecurityGroups/xsecBeast-nsg/securityRules/RDP": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/networkSecurityGroups/xsecBeast-nsg/securityRules/RDP",
+		"resource_type": "azurerm_network_security_rule",
+		"resource_name": "res-5"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/publicIPAddresses/Maikel-Playground_ASML-vnet-ip": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/publicIPAddresses/Maikel-Playground_ASML-vnet-ip",
+		"resource_type": "azurerm_public_ip",
+		"resource_name": "res-6"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/publicIPAddresses/xsecBeast-ip": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/publicIPAddresses/xsecBeast-ip",
+		"resource_type": "azurerm_public_ip",
+		"resource_name": "res-7"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/virtualNetworks/Maikel-Playground_ASML-vnet": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/virtualNetworks/Maikel-Playground_ASML-vnet",
+		"resource_type": "azurerm_virtual_network",
+		"resource_name": "res-8"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/virtualNetworks/Maikel-Playground_ASML-vnet/subnets/AzureBastionSubnet": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/virtualNetworks/Maikel-Playground_ASML-vnet/subnets/AzureBastionSubnet",
+		"resource_type": "azurerm_subnet",
+		"resource_name": "res-9"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/virtualNetworks/Maikel-Playground_ASML-vnet/subnets/default": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/virtualNetworks/Maikel-Playground_ASML-vnet/subnets/default",
+		"resource_type": "azurerm_subnet",
+		"resource_name": "res-10"
+	}
+}

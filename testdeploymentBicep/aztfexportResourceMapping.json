@@ -1,0 +1,22 @@
+{
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/testdeploymentBicep": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/testdeploymentBicep",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "res-0"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/testdeploymentBicep/providers/Microsoft.Web/serverFarms/ca-service-plan": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/testdeploymentBicep/providers/Microsoft.Web/serverfarms/ca-service-plan",
+		"resource_type": "azurerm_service_plan",
+		"resource_name": "res-1"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/testdeploymentBicep/providers/Microsoft.Web/sites/cawebapp32yfmbpnveu6k": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/testdeploymentBicep/providers/Microsoft.Web/sites/cawebapp32yfmbpnveu6k",
+		"resource_type": "azurerm_windows_web_app",
+		"resource_name": "res-2"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/testdeploymentBicep/providers/Microsoft.Web/sites/cawebapp32yfmbpnveu6k/hostNameBindings/cawebapp32yfmbpnveu6k.azurewebsites.net": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/testdeploymentBicep/providers/Microsoft.Web/sites/cawebapp32yfmbpnveu6k/hostNameBindings/cawebapp32yfmbpnveu6k.azurewebsites.net",
+		"resource_type": "azurerm_app_service_custom_hostname_binding",
+		"resource_name": "res-6"
+	}
+}
