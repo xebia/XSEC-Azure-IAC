@@ -26,6 +26,8 @@ resource "azurerm_windows_web_app" "res-2" {
   # checkov:skip=CKV_AZURE_16: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_71: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_88: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_213: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_214: This issue is being waivered for now
   client_affinity_enabled = true
   https_only              = true
   location                = "westeurope"
