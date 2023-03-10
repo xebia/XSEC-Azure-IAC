@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "res-0" {
   name     = "Maikel-Playground_ASML"
 }
 resource "azurerm_windows_virtual_machine" "res-1" {
-  # checkov:skip=CKV_AZURE_50: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_50: This issue is being waivered for now.
   # checkov:skip=CKV_AZURE_151: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_177: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_179: This issue is being waivered for now
