@@ -67,3 +67,5 @@ jobs:
 # Apply Terraform changes
     - name: Terraform Apply
       run: for i in $(find . -name main.tf | cut -d "/" -f 2); do terraform -chdir=$i apply --auto-approve -input=false; done
+    - if: failure()
+        run: foo
