@@ -64,28 +64,38 @@ resource "azurerm_linux_virtual_machine_scale_set" "res-1" {
     # One of azurerm_subnet.res-13,azurerm_subnet_network_security_group_association.res-14,azurerm_subnet_route_table_association.res-15 (can't auto-resolve as their ids are identical)
   ]
 }
-resource "azurerm_virtual_machine_scale_set_extension" "res-2" {
-  auto_upgrade_minor_version   = false
-  name                         = "AKSLinuxExtension"
-  provision_after_extensions   = ["vmssCSE"]
-  publisher                    = "Microsoft.AKS"
-  type                         = "Compute.AKS.Linux.AKSNode"
-  type_handler_version         = "1.39"
-  virtual_machine_scale_set_id = "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/MC_Vault_Xsec_Xsec_westeurope/providers/Microsoft.Compute/virtualMachineScaleSets/aks-default-11516176-vmss"
-  depends_on = [
-    azurerm_linux_virtual_machine_scale_set.res-1,
-  ]
-}
-resource "azurerm_virtual_machine_scale_set_extension" "res-3" {
-  name                         = "aks-default-11516176-vmss-AKSLinuxBilling"
-  publisher                    = "Microsoft.AKS"
-  type                         = "Compute.AKS.Linux.Billing"
-  type_handler_version         = "1.0"
-  virtual_machine_scale_set_id = "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/MC_Vault_Xsec_Xsec_westeurope/providers/Microsoft.Compute/virtualMachineScaleSets/aks-default-11516176-vmss"
-  depends_on = [
-    azurerm_linux_virtual_machine_scale_set.res-1,
-  ]
-}
+# resource "azurerm_virtual_machine_scale_set_extension" "res-2" {
+#   auto_upgrade_minor_version   = false
+#   name                         = "AKSLinuxExtension"
+#   provision_after_extensions   = ["vmssCSE"]
+#   publisher                    = "Microsoft.AKS"
+#   type                         = "Compute.AKS.Linux.AKSNode"
+#   type_handler_version         = "1.39"
+#   virtual_machine_scale_set_id = "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/MC_Vault_Xsec_Xsec_westeurope/providers/Microsoft.Compute/virtualMachineScaleSets/aks-default-11516176-vmss"
+#   depends_on = [
+#     azurerm_linux_virtual_machine_scale_set.res-1,
+#   ]
+# }
+# resource "azurerm_virtual_machine_scale_set_extension" "res-3" {
+#   name                         = "aks-default-11516176-vmss-AKSLinuxBilling"
+#   publisher                    = "Microsoft.AKS"
+#   type                         = "Compute.AKS.Linux.Billing"
+#   type_handler_version         = "1.0"
+#   virtual_machine_scale_set_id = "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/MC_Vault_Xsec_Xsec_westeurope/providers/Microsoft.Compute/virtualMachineScaleSets/aks-default-11516176-vmss"
+#   depends_on = [
+#     azurerm_linux_virtual_machine_scale_set.res-1,
+#   ]
+# }
+# resource "azurerm_virtual_machine_scale_set_extension" "res-4" {
+#   name                         = "vmssCSE"
+#   publisher                    = "Microsoft.Azure.Extensions"
+#   type                         = "CustomScript"
+#   type_handler_version         = "2.0"
+#   virtual_machine_scale_set_id = "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/MC_Vault_Xsec_Xsec_westeurope/providers/Microsoft.Compute/virtualMachineScaleSets/aks-default-11516176-vmss"
+#   depends_on = [
+#     azurerm_linux_virtual_machine_scale_set.res-1,
+#   ]
+# }
 resource "azurerm_user_assigned_identity" "res-9" {
   location            = "westeurope"
   name                = "Xsec-agentpool"
