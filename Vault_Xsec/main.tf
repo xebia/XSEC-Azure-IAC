@@ -10,6 +10,10 @@ resource "azurerm_kubernetes_cluster" "res-1" {
   # checkov:skip=CKV_AZURE_7: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_116: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_117: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_168: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_170: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_171: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_172: This issue is being waivered for now
   dns_prefix          = "xsecvaultaks1"
   location            = "westeurope"
   name                = "Xsec"

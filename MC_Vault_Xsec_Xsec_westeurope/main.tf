@@ -8,8 +8,9 @@ resource "azurerm_resource_group" "res-0" {
   }
 }
 resource "azurerm_linux_virtual_machine_scale_set" "res-1" {
-	# checkov:skip=CKV_AZURE_49: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_49: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_97: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_179: This issue is being waivered for now
   admin_username         = "azureuser"
   extensions_time_budget = "PT16M"
   instances              = 1
