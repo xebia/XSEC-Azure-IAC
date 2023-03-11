@@ -37,7 +37,7 @@ resource "azurerm_storage_account" "state-sta" {
   # checkov:skip=CKV_AZURE_190: test2
   # checkov:skip=CKV_AZURE_206: test2
   depends_on                = [azurerm_resource_group.state-rg]
-  name                      = "${lower(var.company)}xsec"
+  name                      = "${lower(var.company)}st57319"
   resource_group_name       = azurerm_resource_group.state-rg.name
   location                  = azurerm_resource_group.state-rg.location
   account_kind              = "StorageV2"
