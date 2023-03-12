@@ -1,9 +1,9 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = "github-actions-tfstate-rg"
-    storage_account_name = "githubactiiontfstate8154"
-    container_name       = "tfstate"
-    key                  = "nCZw6/N5EXUTeP3WzcT9kPnyg1r7gbc4i7sq8gHgfLQ7hwUiw5LI8iF+r1Np3uNK8Bg/r9rVBHWd+AStnS0u3w=="
+    resource_group_name  = "xsecpipelinetest-tfstate-rg"
+    storage_account_name = "xsecpipelinetesttfvjcib"
+    container_name       = "core-tfstate"
+    key                  = "TuJGoNcS8xKVGmfc17haiNCDeY1U2z4Mhf9zVYEss555b09k2qa9f2DOPb2YjQc2jqAZhNaZk+Oc+AStEEalQA=="
   }
   required_providers {
     azurerm = {
