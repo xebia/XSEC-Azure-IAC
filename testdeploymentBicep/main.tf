@@ -47,11 +47,11 @@ resource "azurerm_windows_web_app" "res-2" {
     azurerm_service_plan.res-1,
   ]
 }
-resource "azurerm_app_service_custom_hostname_binding" "res-6" {
-  app_service_name    = "cawebapp32yfmbpnveu6k"
-  hostname            = "cawebapp32yfmbpnveu6k.azurewebsites.net"
-  resource_group_name = "testdeploymentBicep"
-  depends_on = [
-    azurerm_windows_web_app.res-2,
-  ]
-}
+# resource "azurerm_app_service_custom_hostname_binding" "res-6" {
+#   app_service_name    = "cawebapp32yfmbpnveu6k"
+#   hostname            = "cawebapp32yfmbpnveu6k.azurewebsites.net"
+#   resource_group_name = "testdeploymentBicep"
+#   depends_on = [
+#     azurerm_windows_web_app.res-2,
+#   ]
+# }
