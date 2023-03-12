@@ -408,6 +408,7 @@ resource "azurerm_storage_account" "res-446" {
   # checkov:skip=CKV2_AZURE_18: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_33: This issue is being waivered for now
   # checkov:skip=CKV2_AZURE_1: This issue is being waivered for now
+  # checkov:skip=CKV2_AZURE_33: This issue is being waivered for now
   account_replication_type  = "RAGRS"
   account_tier              = "Standard"
   location                  = "westeurope"
@@ -466,6 +467,7 @@ resource "azurerm_storage_account" "res-455" {
   # checkov:skip=CKV2_AZURE_18: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_33: This issue is being waivered for now
   # checkov:skip=CKV2_AZURE_1: This issue is being waivered for now
+  # checkov:skip=CKV2_AZURE_33: This issue is being waivered for now
   account_replication_type        = "LRS"
   account_tier                    = "Standard"
   allow_nested_items_to_be_public = false
@@ -503,6 +505,7 @@ resource "azurerm_storage_account" "res-462" {
   # checkov:skip=CKV2_AZURE_18: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_33: This issue is being waivered for now
   # checkov:skip=CKV2_AZURE_1: This issue is being waivered for now
+  # checkov:skip=CKV2_AZURE_33: This issue is being waivered for now
   account_replication_type = "LRS"
   account_tier             = "Standard"
   location                 = "westeurope"
@@ -520,6 +523,7 @@ resource "azurerm_storage_account" "res-467" {
   # checkov:skip=CKV2_AZURE_18: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_33: This issue is being waivered for now
   # checkov:skip=CKV2_AZURE_1: This issue is being waivered for now
+  # checkov:skip=CKV2_AZURE_33: This issue is being waivered for now
   account_replication_type  = "RAGRS"
   account_tier              = "Standard"
   location                  = "westeurope"

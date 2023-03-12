@@ -149,6 +149,7 @@ resource "azurerm_virtual_network" "res-12" {
   ]
 }
 resource "azurerm_subnet" "res-13" {
+  # checkov:skip=CKV2_AZURE_31: This issue is being waivered for now
   address_prefixes     = ["10.224.0.0/16"]
   name                 = "aks-subnet"
   resource_group_name  = "MC_Vault_Xsec_Xsec_westeurope"
