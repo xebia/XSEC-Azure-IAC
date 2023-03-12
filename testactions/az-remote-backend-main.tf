@@ -31,6 +31,7 @@ resource "azurerm_storage_account" "state-sta" {
   # checkov:skip=CKV_AZURE_59: test11
   # checkov:skip=CKV_AZURE_59: test12
   # checkov:skip=CKV_AZURE_33: For Testing Reasons, waivering risk
+  # checkov:skip=CKV_AZURE_34: For Testing Reasons, waivering risk
   # checkov:skip=CKV2_AZURE_1: For Testing Reasons, waivering risk
   # checkov:skip=CKV2_AZURE_18: For Testing Reasons, waivering risk
   # checkov:skip=CKV_AZURE_44: For Testing Reasons, waivering risk
