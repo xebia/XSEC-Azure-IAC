@@ -19,7 +19,6 @@ jobs:
   #       uses: aquasecurity/tfsec-action@v1.0.0
   #       with:
   #         working_directory: ./
-  #
   Checkov:
     name: Checkov
     # needs: tfsec
