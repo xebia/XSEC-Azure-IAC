@@ -12,7 +12,7 @@ resource "azurerm_windows_virtual_machine" "res-1" {
   admin_username        = "maikelvanamen1"
   license_type          = "Windows_Client"
   location              = "westeurope"
-  name                  = "xsecBeast"
+  name                  = "Xsec-Beast"
   network_interface_ids = ["/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/Maikel-Playground_ASML/providers/Microsoft.Network/networkInterfaces/xsecbeast411"]
   resource_group_name   = "Maikel-Playground_ASML"
   size                  = "Standard_D2s_v3"
