@@ -1,9 +1,9 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = var.backend.resourcegroupname
-    storage_account_name = var.backend.storageaccountname
-    container_name       = var.backend.containername
-    key                  = "${path.module}".var.backend.key
+    resource_group_name  = "rg-ts-state-xsec"
+    storage_account_name = "saxsectf"
+    container_name       = "terraform-state"
+    key                  = "${path.module}.terraform.tfstate"
   }
   required_providers {
     azurerm = {
