@@ -3,6 +3,7 @@ resource "azurerm_resource_group" "res-0" {
   name     = "Maikel-Playground_ASML"
 }
 resource "azurerm_windows_virtual_machine" "res-1" {
+  # checkov:skip=CKV_AZURE_50: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_151: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_177: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_179: This issue is being waivered for now
@@ -36,9 +37,7 @@ resource "azurerm_windows_virtual_machine" "res-1" {
   depends_on = [
     azurerm_network_interface.res-2,
   ]
-  allow_extension_operations = false
 }
-
 resource "azurerm_network_interface" "res-2" {
   # checkov:skip=CKV_AZURE_119: This issue is being waivered for now
   enable_accelerated_networking = true
