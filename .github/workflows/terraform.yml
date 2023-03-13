@@ -20,25 +20,25 @@ jobs:
   #       with:
   #         working_directory: ./
   #
-  # Checkov:
-  #   name: Checkov
-  #   # needs: tfsec
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - name: Set up Python 3.8
-  #       uses: actions/setup-python@v1
-  #       with:
-  #         python-version: 3.8
-  #     - name: Test with Checkov
-  #       id: checkov
-  #       uses: bridgecrewio/checkov-action@442591657ff91d40951ae71ad427c9919ca5ac98
-  #       with:
-  #         directory: ./
-  #         framework: terraform
+  Checkov:
+    name: Checkov
+    # needs: tfsec
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+      - name: Test with Checkov
+        id: checkov
+        uses: bridgecrewio/checkov-action@442591657ff91d40951ae71ad427c9919ca5ac98
+        with:
+          directory: ./
+          framework: terraform
   terraform:
     name: Terraform
-    # needs: Checkov
+    needs: Checkov
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
