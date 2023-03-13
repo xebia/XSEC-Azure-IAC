@@ -3,8 +3,7 @@ terraform {
     resource_group_name  = "rg-ts-state-xsec"
     storage_account_name = "saxsectf"
     container_name       = "terraform-state"
-    key                  = "terraform.tfstate"
-    path                 = "test/terraform.tfstate"
+    key                  = "test.terraform.tfstate"
   }
   required_providers {
     azurerm = {
