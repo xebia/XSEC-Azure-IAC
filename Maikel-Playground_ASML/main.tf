@@ -130,7 +130,7 @@ resource "azurerm_virtual_network" "res-8" {
   ]
 }
 resource "azurerm_subnet" "res-9" {
-  # checkov:skip=CKV2_AZURE_31: This issue is being waivered for now
+  # checkov:skip=CKV2_AZURE_31: This issue is being waivered for now.
   address_prefixes     = ["10.0.1.0/26"]
   name                 = "AzureBastionSubnet"
   resource_group_name  = "Maikel-Playground_ASML"
