@@ -64,7 +64,7 @@ jobs:
       run: for i in $(find . -name main.tf | cut -d "/" -f 2); do sed -i "s/terraform.tfstate/$i.terraform.tfstate/g" $i/terraform.tf; terraform -chdir=$i init -force-copy; done
 # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: for i in $(find . -name main.tf | cut -d "/" -f 2); do terraform -chdir=$i plan -input=false -output; done
+      run: for i in $(find . -name main.tf | cut -d "/" -f 2); do terraform -chdir=$i plan -input=false; done
 
 # Apply Terraform changes
     - name: Terraform Apply
