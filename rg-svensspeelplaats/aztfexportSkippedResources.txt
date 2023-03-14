@@ -1,0 +1,26 @@
+Following resources are marked to be skipped:
+
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Storage/storageAccounts/sasvensspeelplaats/blobServices/default
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Storage/storageAccounts/sasvensspeelplaats/fileServices/default
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Storage/storageAccounts/sasvensspeelplaats/queueServices/default
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Storage/storageAccounts/sasvensspeelplaats/tableServices/default
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/basicPublishingCredentialsPolicies/ftp
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/basicPublishingCredentialsPolicies/scm
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/config/web
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-13T16_36_51_3218783
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-13T17_36_51_4298673
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-13T18_36_51_5215878
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-13T19_36_51_6215903
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-13T20_36_51_7245297
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-13T21_36_51_8158180
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-13T22_36_51_9614151
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-13T23_36_52_0115298
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-14T00_36_52_0997656
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-14T01_36_52_2018288
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-14T02_36_52_2950858
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-14T03_36_52_3886630
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-14T04_36_52_5095466
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-14T05_36_52_5720448
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-14T06_36_52_7225606
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-14T07_36_52_8195072
+- /subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/snapshots/2023-03-14T08_36_52_8605048

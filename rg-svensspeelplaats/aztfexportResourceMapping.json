@@ -1,0 +1,47 @@
+{
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "res-0"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Insights/components/appinsights-svensspeelplaats": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Insights/components/appinsights-svensspeelplaats",
+		"resource_type": "azurerm_application_insights",
+		"resource_name": "res-1"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.KeyVault/vaults/kvsvensspeelplaats": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.KeyVault/vaults/kvsvensspeelplaats",
+		"resource_type": "azurerm_key_vault",
+		"resource_name": "res-2"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Storage/storageAccounts/sasvensspeelplaats": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Storage/storageAccounts/sasvensspeelplaats",
+		"resource_type": "azurerm_storage_account",
+		"resource_name": "res-3"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/serverFarms/appservice-plan-svensspeelplaats": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/serverfarms/appservice-plan-svensspeelplaats",
+		"resource_type": "azurerm_service_plan",
+		"resource_name": "res-8"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats",
+		"resource_type": "azurerm_windows_function_app",
+		"resource_name": "res-9"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/hostNameBindings/functionapp-svensspeelplaats.azurewebsites.net": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Web/sites/functionapp-svensspeelplaats/hostNameBindings/functionapp-svensspeelplaats.azurewebsites.net",
+		"resource_type": "azurerm_app_service_custom_hostname_binding",
+		"resource_name": "res-13"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - appinsights-svensspeelplaats": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.AlertsManagement/smartDetectorAlertRules/Failure Anomalies - appinsights-svensspeelplaats",
+		"resource_type": "azurerm_monitor_smart_detector_alert_rule",
+		"resource_name": "res-31"
+	},
+	"/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/microsoft.insights/actiongroups/Application Insights Smart Detection": {
+		"resource_id": "/subscriptions/1a0d078e-b0e6-432d-89c7-8a75cac664aa/resourceGroups/rg-svensspeelplaats/providers/Microsoft.Insights/actionGroups/Application Insights Smart Detection",
+		"resource_type": "azurerm_monitor_action_group",
+		"resource_name": "res-32"
+	}
+}
