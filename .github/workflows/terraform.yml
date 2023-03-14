@@ -60,11 +60,8 @@ jobs:
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 # workspace selecting
-    - name: Terraform Workspace
-      run: for i in $(find . -name main.tf | cut -d "/" -f 2); do terraform workspace new $i; done
-# Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc
-    - name: Terraform Init
-      run: terraform init
+    - name: Terraform Prep
+      run: for i in $(find . -name main.tf | cut -d "/" -f 2); do terraform workspace new $i || terraform workspace select $i; terraform init; done
 # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: for i in $(find . -name main.tf | cut -d "/" -f 2); do terraform -chdir=$i plan -input=false; done
