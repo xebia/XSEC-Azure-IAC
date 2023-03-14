@@ -59,7 +59,7 @@ jobs:
       uses: hashicorp/setup-terraform@v2
       with:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
-# workspace selecting
+# workspace selecting and creating
     - name: Terraform Prep
       run: for i in $(find . -name main.tf | cut -d "/" -f 2); do terraform workspace new $i || terraform workspace select $i; terraform -chdir=$i init; done
 # Generates an execution plan for Terraform
