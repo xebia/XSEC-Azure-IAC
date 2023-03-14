@@ -36,7 +36,7 @@ jobs:
   #       with:
   #         directory: ./
   #         framework: terraform
-  # terraform:
+  terraform:
     name: Terraform
     # needs: Checkov
     env:
