@@ -64,8 +64,8 @@ jobs:
       run: for i in $(find . -name main.tf | cut -d "/" -f 2); do terraform workspace new $i || terraform workspace select $i; terraform init; done
 # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: for i in $(find . -name main.tf | cut -d "/" -f 2); do terraform -chdir=$i plan -input=false; done
+      run: for i in $(find . -name main.tf | cut -d "/" -f 2); do terraform workspace select $i; terraform plan -input=false; done
 
 # Apply Terraform changes
     - name: Terraform Apply
-      run: for i in $(find . -name main.tf | cut -d "/" -f 2); do terraform -chdir=$i apply --auto-approve -input=false; done
+      run: for i in $(find . -name main.tf | cut -d "/" -f 2); do terraform workspace select $i; terraform apply --auto-approve -input=false; done
