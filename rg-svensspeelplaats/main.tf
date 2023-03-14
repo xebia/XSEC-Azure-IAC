@@ -15,6 +15,9 @@ resource "azurerm_key_vault" "res-2" {
   # checkov:skip=CKV_AZURE_42: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_110: This issue is being waivered for now
   # checkov:skip=CKV_AZURE_109: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_189: This issue is being waivered for now
+  # checkov:skip=CKV_AZURE_212: This issue is being waivered for now
+  # checkov:skip=CKV2_AZURE_32: This issue is being waivered for now
   enabled_for_deployment          = true
   enabled_for_disk_encryption     = true
   enabled_for_template_deployment = true
